@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutosLarusso - Catálogo de Productos</title>
+    <link rel="stylesheet" href="../styles/productos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imagenes/logo.jpeg" alt="AutosLarusso">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+            <button id="cart-icon">🛒 Carrito (<span id="cart-count">0</span>)button>
+            
+            <div id="cart-modal" class="cart-modal">
+                <div class="cart-content">
+                    <span class="close-cart">&times;</span>
+                    <h2>Carrito de Compras</h2>
+                    <div id="cart-items"></div>
+                    <div class="cart-total">
+                        <p>Total: $<span id="cart-total-price">0</span></p>
+                    </div>
+                    <button id="checkout-btn">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="productos-grid" id="productos-container">
+            <!-- Los productos se generarán dinámicamente con JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AutosLarusso. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/productos.js"></script>
+</body>
+</html>
